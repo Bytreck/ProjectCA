@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Masivos¿</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/eventos-masivos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="left-section">
+            <a class="logo-btn" href="admin.html">
+                <img src="img/LogoOuranus.png" width="110px" alt="Logo de ChronoAlert" class="logo">
+            </a>
+            <button id="sidebarToggle" class="menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+        <div class="center-section"><h2>ChronoAlert</h2></div>
+        <div class="right-section">
+            <div class="dropdown">
+                <button id="userToggle" class="user-btn">Admin 👤</button>
+                <ul id="userDropdown" class="dropdown-menu">
+                    <a id="logoutButton" class="menu-item" href="signin.html">
+                        <i class="fas fa-sign-out-alt"></i> Cerrar sesión
+                    </a>
+                </ul>                
+            </div>
+        </div>        
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <ul>
+            <li><a data-target="eventos-masivos" href="eventos-masivos.html"><i class="fas fa-calendar-alt"></i> Evento Masivo</a></li>
+            <li><button id="colorToggle"><i class="fas fa-palette"></i> Cambiar Color</button></li>
+        </ul>
+    </aside>
+
+    <div class="container main-content">
+        <h3>Crear Evento Masivo</h3>
+        <form id="massEventForm">
+            <div class="form-group">
+                <label for="eventTitle">Título</label>
+                <input type="text" id="eventTitle" class="form-control" placeholder="Título del evento" required>
+            </div>
+            <div class="form-group">
+                <label for="eventDescription">Descripción</label>
+                <textarea id="eventDescription" class="form-control" placeholder="Descripción del evento"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="eventDate">Fecha</label>
+                <input type="datetime-local" id="eventDate" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="eventUsers">Usuarios</label>
+                <input type="text" id="eventUsers" class="form-control" placeholder="Ingresa usuarios separados por comas">
+            </div>
+            <div class="button-group">
+                <button type="button" id="addMassEventButton" class="btn btn-success">Agregar</button>
+                <button type="button" id="modifyMassEventButton" class="btn btn-primary">Modificar</button>
+                <button type="button" id="deleteMassEventButton" class="btn btn-danger">Eliminar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/eventos-masivos.js" defer></script>
+</body>
+</html>

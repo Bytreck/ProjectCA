@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Calendario de Eventos</title>
+    <link href="css/singup.css" rel="stylesheet">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="left-section">
+            <h1>ChronoAlert</h1>
+        </div>
+        <div class="right-section">
+            <form class="signup-form" id="signupForm">
+                <h2>Crear una cuenta</h2>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" placeholder="Email Address" required>
+    
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="Password" required>
+    
+                <label for="confirm-password">Confirmar Contraseña</label>
+                <input type="password" id="confirm-password" placeholder="Password" required>
+    
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">Acepto todos los términos y condiciones.</label>
+                </div>
+    
+                <button type="submit" class="btn-submit">Crear cuenta</button>
+                <p>¿Ya tienes una cuenta? <a href="singin.html">Iniciar sesión</a></p>
+            </form>
+        </div>
+    </div>    
+    <script src="js/singup.js"></script>
+</body>
+</html>

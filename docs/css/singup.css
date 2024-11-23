@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+}
+.signup-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 70vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+/* Left Section */
+.left-section {
+    flex: 1;
+    position: relative;
+    background: url('C:/Users/Emmanuel/Downloads/Proyecto ChronoAlert/test/img/LogoOuranus.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    color: white;
+}
+.left-section h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+/* Right Section */
+.right-section {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signup-form {
+    width: 100%;
+    max-width: 400px;
+}
+.signup-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+.signup-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+.signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.signup-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.terms input {
+    margin-right: 10px;
+}
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+.signup-form p {
+    text-align: center;
+    margin-top: 10px;
+}
+.signup-form a {
+    color: #007bff;
+    text-decoration: none;
+}
+.signup-form a:hover {
+    text-decoration: underline;
+}

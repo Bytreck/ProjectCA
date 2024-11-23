@@ -1,0 +1,27 @@
+/* Estilos específicos para el plan de estudio */
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+    background-color: inherit; /* Hereda el background que cambia el botón de color */
+    min-height: 100vh;
+}
+
+.main-content h3 {
+    font-weight: bold;
+    color: #04253c;
+}
+
+#studyPlanForm .form-group label {
+    font-weight: bold;
+    color: #04253c;
+}
+
+#studyPlanForm .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.button-group button {
+    min-width: 120px;
+    margin: 5px;
+}

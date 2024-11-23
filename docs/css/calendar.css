@@ -1,0 +1,44 @@
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.modal-header{
+    background-color: #04253c;
+    color: #fff;
+}
+.close{
+    color: #fff;
+}
+.fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fc-toolbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+.fc-toolbar-chunk:first-child {
+    flex: 1;
+}
+.fc-toolbar-chunk:last-child {
+    display: flex;
+}
+.fc-button {
+    background-color: #04253c !important;
+    color: #fff !important;
+    border: none !important;
+}
+.fc-button:hover {
+    background-color: #055381 !important;
+}
+.fc-event {
+    background-color: #04253c !important;
+    color: #fff !important;
+}
+.fc-daygrid-day-number,
+.fc-col-header-cell-cushion {
+    color: #000 !important;
+}
